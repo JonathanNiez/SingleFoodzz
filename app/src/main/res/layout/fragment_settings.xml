@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="20pt"
+        android:layout_height="20pt"
+        android:paddingTop="5pt"
+        android:paddingStart="5pt"
+        android:src="@drawable/ic_baseline_settings_24" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5pt"
+        android:layout_marginTop="5pt"
+        android:layout_marginEnd="5pt"
+        android:layout_marginBottom="5pt"
+        android:layout_toRightOf="@id/imageview"
+        android:text="Settings"
+        android:textColor="@color/black"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10pt"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Theme"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <Switch
+            android:id="@+id/theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:minHeight="48dp"
+            android:text="Change Theme to Dark mode"
+            android:textSize="8pt" />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

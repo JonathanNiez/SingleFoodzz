@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/confirmOrderDialog">
+
+    <ImageView
+        android:layout_marginTop="20pt"
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo2"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/rubikregular"
+        android:text="Confirm Order"
+        android:textColor="@color/black"
+        android:textSize="20pt" />
+
+    <LinearLayout
+        android:id="@+id/orderDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/textView"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/foodNameDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Food Name"
+            android:fontFamily="@font/rubikregular"
+            android:textColor="@color/black"
+            android:textSize="13pt"/>
+
+
+        <TextView
+            android:id="@+id/priceDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:fontFamily="@font/rubikregular"
+            android:textColor="@color/black"
+            android:textSize="13pt"/>
+
+        <TextView
+            android:id="@+id/quantityDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:fontFamily="@font/rubikregular"
+            android:textColor="@color/black"
+            android:textSize="13pt"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/orderDetails">
+
+        <Button
+            android:id="@+id/confirmBtnDialog"
+            android:layout_width="80pt"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/limegreen"
+            android:fontFamily="@font/rubikregular"
+            android:text="Confirm"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="11pt"
+            android:layout_margin="3dp"/>
+
+        <Button
+            android:id="@+id/cancelBtnDialog"
+            android:layout_width="80pt"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:padding="10dp"
+            android:textSize="11pt"
+            android:backgroundTint="@color/red"
+            android:textColor="@color/black"
+            android:fontFamily="@font/rubikregular"
+            android:layout_margin="3dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

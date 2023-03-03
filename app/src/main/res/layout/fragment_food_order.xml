@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FoodOrder"
+    android:background="@drawable/background3">
+
+
+    <TextView
+        android:id="@+id/textLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Order Food"
+        android:textColor="@color/black"
+        android:textSize="22pt"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        tools:listitem="@layout/foods"/>
+
+
+<!--        <TextView-->
+<!--        android:id="@+id/foodName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="10pt"-->
+<!--        android:text="Food Name"-->
+<!--        android:layout_below="@id/textLogo"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:textStyle="bold"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/totalPrice"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="10pt"-->
+<!--        android:text="Total ₱"-->
+<!--        android:layout_below="@id/foodName"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:textStyle="bold"-->
+<!--        />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/totalQuantity"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="10pt"-->
+<!--        android:text="Quantity"-->
+<!--        android:layout_below="@id/totalPrice"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:textStyle="bold"-->
+<!--        />-->
+
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:fillViewport="true"-->
+<!--        android:layout_below="@+id/textLogo"-->
+<!--        android:layout_marginStart="5dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginEnd="5dp"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        >-->
+
+
+<!--        <GridLayout-->
+<!--            android:layout_below="@id/textLogo"-->
+<!--            android:id="@+id/foodGrid"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginTop="50dp"-->
+<!--            android:columnCount="2"-->
+<!--            android:rowCount="2">-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_row="0"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_column="0"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_margin="7dp"-->
+<!--                android:elevation="7dp"-->
+<!--                app:cardCornerRadius="10dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal|center_vertical"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:textAlignment="center">-->
+
+<!--                    <ImageView-->
+
+<!--                        android:layout_width="60pt"-->
+<!--                        android:layout_height="60pt"-->
+<!--                        android:layout_weight="1"-->
+<!--                        app:srcCompat="@drawable/bangus1" />-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/food1"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textSize="10pt"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:text="Bangus"-->
+<!--                        android:layout_margin="5dp"/>-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/button1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_rowWeight="1"-->
+<!--                        android:layout_columnWeight="1"-->
+<!--                        android:layout_gravity="fill"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:backgroundTint="@color/gold"-->
+<!--                        android:text="order"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="10pt" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/price1"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_rowWeight="1"-->
+<!--                        android:layout_columnWeight="1"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="₱100"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="12pt"-->
+<!--                        android:textStyle="bold" />-->
+
+
+<!--                </LinearLayout>-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_row="0"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_column="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_margin="7dp"-->
+<!--                android:elevation="7dp"-->
+<!--                app:cardCornerRadius="10dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal|center_vertical"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:textAlignment="center">-->
+
+<!--                    <ImageView-->
+
+<!--                        android:layout_width="60pt"-->
+<!--                        android:layout_height="60pt"-->
+<!--                        android:layout_weight="1"-->
+<!--                        app:srcCompat="@drawable/kinilaw" />-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/food2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textSize="10pt"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:text="Kinilaw"-->
+<!--                        />-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/button2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_rowWeight="1"-->
+<!--                        android:layout_columnWeight="1"-->
+<!--                        android:layout_gravity="fill"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:backgroundTint="@color/gold"-->
+<!--                        android:text="order"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="10pt" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/price2"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_rowWeight="1"-->
+<!--                        android:layout_columnWeight="1"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="₱80"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="12pt"-->
+<!--                        android:textStyle="bold" />-->
+
+
+<!--                </LinearLayout>-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_row="1"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_column="0"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_margin="7dp"-->
+<!--                android:elevation="7dp"-->
+<!--                app:cardCornerRadius="10dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal|center_vertical"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:textAlignment="center">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="60pt"-->
+<!--                        android:layout_height="60pt"-->
+<!--                        android:layout_weight="1"-->
+<!--                        app:srcCompat="@drawable/sisig1" />-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/food3"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textSize="10pt"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:text="Sisig"-->
+<!--                        />-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/button3"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_rowWeight="1"-->
+<!--                        android:layout_columnWeight="1"-->
+<!--                        android:layout_gravity="fill"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:backgroundTint="@color/gold"-->
+<!--                        android:text="order"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="10pt" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/price3"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_rowWeight="1"-->
+<!--                        android:layout_columnWeight="1"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="₱100"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="12pt"-->
+<!--                        android:textStyle="bold" />-->
+
+
+<!--                </LinearLayout>-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_row="1"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_column="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_margin="7dp"-->
+<!--                android:elevation="7dp"-->
+<!--                app:cardCornerRadius="10dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal|center_vertical"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:textAlignment="center">-->
+
+<!--                    <ImageView-->
+
+<!--                        android:layout_width="60pt"-->
+<!--                        android:layout_height="60pt"-->
+<!--                        android:layout_weight="1"-->
+<!--                        app:srcCompat="@drawable/burger" />-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/food4"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textSize="10pt"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:text="Burger"-->
+<!--                        />-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/button4"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_rowWeight="1"-->
+<!--                        android:layout_columnWeight="1"-->
+<!--                        android:layout_gravity="fill"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:backgroundTint="@color/gold"-->
+<!--                        android:text="order"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="10pt" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/price4"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_rowWeight="1"-->
+<!--                        android:layout_columnWeight="1"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="₱100"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="12pt"-->
+<!--                        android:textStyle="bold" />-->
+
+
+<!--                </LinearLayout>-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            &lt;!&ndash;        <ImageView&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_width="10pt"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_height="10pt"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:text="Bangus"&ndash;&gt;-->
+<!--            &lt;!&ndash;            app:srcCompat="@drawable/sisig1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_gravity="fill"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_columnWeight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_rowWeight="1"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;        <Button&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:id="@+id/SisigBTN"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:text="add"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_gravity="fill"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_columnWeight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_rowWeight="1"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:id="@+id/TVsisig"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:text="₱99"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:textSize="20dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_gravity="fill"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_columnWeight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_rowWeight="1"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;        <ImageView&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_width="10pt"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_height="10pt"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:text="Bangus"&ndash;&gt;-->
+<!--            &lt;!&ndash;            app:srcCompat="@drawable/pusit"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_gravity="fill"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_columnWeight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_rowWeight="1"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;        <Button&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:id="@+id/PusitBTN"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:text="add"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_gravity="fill"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_columnWeight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_rowWeight="1"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:id="@+id/TVpusit"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:text="₱150"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:textSize="20dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_gravity="fill"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_columnWeight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_rowWeight="1"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;        <ImageView&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_width="10pt"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_height="10pt"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:text="Bangus"&ndash;&gt;-->
+<!--            &lt;!&ndash;            app:srcCompat="@drawable/burger"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_gravity="fill"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_columnWeight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_rowWeight="1"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;        <Button&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:id="@+id/BurgerBTN"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:text="add"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_gravity="fill"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_columnWeight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_rowWeight="1"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:id="@+id/TVburger"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:text="₱150"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:textSize="20dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_gravity="fill"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_columnWeight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_rowWeight="1"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;        <ImageView&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_width="10pt"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_height="10pt"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:text="Bangus"&ndash;&gt;-->
+<!--            &lt;!&ndash;            app:srcCompat="@drawable/kinilaw"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_gravity="fill"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_columnWeight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_rowWeight="1"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;        <Button&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:id="@+id/KinilawBTN"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:text="add"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_gravity="fill"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_columnWeight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_rowWeight="1"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:id="@+id/TVkinilaw"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:text="₱150"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:textSize="20dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_gravity="fill"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_columnWeight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_rowWeight="1"/>&ndash;&gt;-->
+
+<!--            &lt;!&ndash;        <Button&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:text="Place Order"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:textColor="@color/material_dynamic_primary10"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_gravity="fill"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_columnWeight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_rowWeight="1"/>&ndash;&gt;-->
+
+<!--        </GridLayout>-->
+
+<!--    </ScrollView>-->
+
+</RelativeLayout>
+

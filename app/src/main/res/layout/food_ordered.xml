@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="fill"
+    android:layout_margin="10dp"
+    android:elevation="7dp"
+    android:background="@color/gray"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center">
+
+        <ImageView
+            android:id="@+id/foodImage"
+            android:layout_width="70pt"
+            android:layout_height="70pt"
+            app:srcCompat="@drawable/bangus1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_toRightOf="@id/foodImage">
+
+            <TextView
+                android:id="@+id/foodOrderID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/foodName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="Bangus"
+                android:fontFamily="@font/rubikblack"
+                android:textColor="@color/black"
+                android:textSize="13pt" />
+
+            <Button
+                android:id="@+id/cancelOrderButton"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:padding="10dp"
+                android:backgroundTint="@color/red"
+                android:textColor="@color/black"
+                android:fontFamily="@font/rubikbold"
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/foodQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity:"
+                android:fontFamily="@font/rubikmedium"
+                android:textColor="@color/black"
+                android:textSize="11pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/foodPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₱100"
+                android:fontFamily="@font/rubikmedium"
+                android:textColor="@color/black"
+                android:textSize="13pt"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
